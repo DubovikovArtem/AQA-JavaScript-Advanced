@@ -32,10 +32,10 @@ console.log(sayHello + " " + firstPerson + " and " + secondPerson);
 console.log(`${sayHello} ${firstPerson} and ${secondPerson}`);
 console.log(sayHello);
  //or 
- let firstPerson2 = "Vaniok";
- let secondPerson2 = "Sergik";
- let sayHello2 = "Hello " + firstPerson2 + " " + secondPerson2;
- console.log(sayHello2);
+let firstPerson2 = "Vaniok";
+let secondPerson2 = "Sergik";
+let sayHello2 = "Hello " + firstPerson2 + " " + secondPerson2;
+console.log(sayHello2);
 
 /**3.Створіть змінну зі значенням "5.489"
 - приведіть змінну до типу даних number, зі збереженням символів
