@@ -16,27 +16,27 @@
 
 Усі результати виведіть у консоль.
  */
-let salary, persent, result;
+let salary, percent, result;
 let yearsOfExperience = 4.1;
 if (yearsOfExperience < 0.5) {
     salary = 0;
-    persent = 0;
+    percent = 0;
     result = 0;
 } else if (yearsOfExperience <= 1) {
     salary = 100;
-    persent = 0.01;
-    result = salary + (salary * persent);
+    percent = 0.01;
+    result = salary + (salary * percent);
 } else if (yearsOfExperience <= 2) {
     salary = 333;
-    persent = 0.03;
-    result = salary + (salary * persent);
+    percent = 0.03;
+    result = salary + (salary * percent);
 } else if (yearsOfExperience <= 4) {
     salary = 555;
-    persent = 0.04;
-    result = salary + (salary * persent);
+    percent = 0.04;
+    result = salary + (salary * percent);
 }else{
     salary = 666;
-    persent = yearsOfExperience * salary;
-    result = salary + persent;
+    percent = yearsOfExperience * salary;
+    result = salary + percent;
 }
 console.log("Your salary : " + result);

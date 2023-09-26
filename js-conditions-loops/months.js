@@ -10,40 +10,40 @@
 let numberOfMonths = "April";
 let msg;
 switch (numberOfMonths) {
-    case 'January':
+    case "January":
         msg = "January";
         break;
-    case 'February':
+    case "February":
         msg = "February";
         break;
-    case 'March':
+    case "March":
         msg = "March";
         break;
-    case 'April':
+    case "April":
         msg = "April";
         break;
-    case 'May':
+    case "May":
         msg = "May";
         break;
-    case 'June':
+    case "June":
         msg = "June";
         break;
-    case 'July':
+    case "July":
         msg = "July";
         break;
-    case 'August':
+    case "August":
         msg = "August";
         break;
-    case 'September':
+    case "September":
         msg = "September";
         break;
-    case 'October':
+    case "October":
         msg = "October";
         break;
-    case 'November':
+    case "November":
         msg = "November";
         break;
-    case 'December':
+    case "December":
         msg = "December";
         break;
     default:
