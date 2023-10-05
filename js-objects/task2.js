@@ -12,5 +12,6 @@ let room = {
     window: false
 }
 
+let nameField = room.name;
 let isWindow = room.window;
-console.log(isWindow);
+console.log(`name = ${nameField}, window = ${isWindow}`);

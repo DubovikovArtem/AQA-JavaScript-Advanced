@@ -23,4 +23,4 @@ let automationQA = {
     }
 }
 
-console.log(automationQA.age)
+console.log(automationQA)

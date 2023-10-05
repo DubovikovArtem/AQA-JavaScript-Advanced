@@ -13,7 +13,7 @@ genre - стрінга, має містити жанр.
 
 let movie = {
     title: "king kong",
-    releaseYear: 24.06,
+    releaseYear: 3005,
     genre: "mobkey"
 }
 movie.actors = {mainRole : "Test Test"};
