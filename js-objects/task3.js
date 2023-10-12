@@ -18,7 +18,7 @@ let movie = {
 }
 movie.actors = {mainRole : "Test Test"};
 movie.director = "Adolf Hitler";
-console.log(movie)
+console.log(movie);
 delete movie.title;
 
 console.log(movie);
