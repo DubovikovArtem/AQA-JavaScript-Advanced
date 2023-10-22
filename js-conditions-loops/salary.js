@@ -19,24 +19,24 @@
 let salary, percent, result;
 let yearsOfExperience = 4.1;
 if (yearsOfExperience < 0.5) {
-    salary = 0;
-    percent = 0;
-    result = 0;
+  salary = 0;
+  percent = 0;
+  result = 0;
 } else if (yearsOfExperience <= 1) {
-    salary = 100;
-    percent = 0.01;
-    result = salary + (salary * percent);
+  salary = 100;
+  percent = 0.01;
+  result = salary + salary * percent;
 } else if (yearsOfExperience <= 2) {
-    salary = 333;
-    percent = 0.03;
-    result = salary + (salary * percent);
+  salary = 333;
+  percent = 0.03;
+  result = salary + salary * percent;
 } else if (yearsOfExperience <= 4) {
-    salary = 555;
-    percent = 0.04;
-    result = salary + (salary * percent);
-}else{
-    salary = 666;
-    percent = yearsOfExperience * salary;
-    result = salary + percent;
+  salary = 555;
+  percent = 0.04;
+  result = salary + salary * percent;
+} else {
+  salary = 666;
+  percent = yearsOfExperience * salary;
+  result = salary + percent;
 }
 console.log("Your salary : " + result);

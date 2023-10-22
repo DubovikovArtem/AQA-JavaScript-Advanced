@@ -21,11 +21,11 @@ const result = multiply(4, 9, 83, 3);
 console.log(result) // [ 36, 332, 12 ]
  */
 function multiply(multiplier, ...arguments) {
-    let res = arguments.map((i) => multiplier * i);
-    return res;
+  let res = arguments.map((i) => multiplier * i);
+  return res;
 }
 
 const result = multiply(4, 9, 83, 3);
-console.log(result)
+console.log(result);
 
 //test

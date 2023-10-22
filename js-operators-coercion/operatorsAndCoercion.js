@@ -1,4 +1,3 @@
-
 /*Людина хоче отримати права.
 Створіть змінну яка буде символізувати вік людини. 
 Після чого створіть булеву змінну, яка буде визначати чи 
@@ -9,9 +8,9 @@
 let humanAge, isAdult;
 humanAge = 18;
 if (humanAge < 18) {
-    isAdult = false;
+  isAdult = false;
 } else {
-    isAdult = true;
+  isAdult = true;
 }
 console.log(isAdult);
 //V2 -----
@@ -31,7 +30,7 @@ let sayHello = "Hello";
 console.log(sayHello + " " + firstPerson + " and " + secondPerson);
 console.log(`${sayHello} ${firstPerson} and ${secondPerson}`);
 console.log(sayHello);
- //or 
+//or
 let firstPerson2 = "Vaniok";
 let secondPerson2 = "Sergik";
 let sayHello2 = "Hello " + firstPerson2 + " " + secondPerson2;
@@ -46,7 +45,7 @@ console.log(sayHello2);
 */
 let startNum = "5.489";
 let num = parseFloat(startNum);
-console.log(num , typeof num);
+console.log(num, typeof num);
 console.log(isNaN(num));
 console.log(num.toFixed(1));
 let numToString = num.toString();
@@ -64,7 +63,8 @@ and hosted by the Wikipedia Foundation."
 Всі результати виконання виведіть в консоль
  */
 
-let aboutWikipedia = "Wikipedia is a free online encyclopedia, created and edited by volunteers around the worldand hosted by the Wikipedia Foundation."
+let aboutWikipedia =
+  "Wikipedia is a free online encyclopedia, created and edited by volunteers around the worldand hosted by the Wikipedia Foundation.";
 console.log(aboutWikipedia.length);
 console.log(aboutWikipedia.replaceAll("Wikipedia", "xxx"));
 console.log(aboutWikipedia.includes("world"));
@@ -98,6 +98,3 @@ let areaOfRectangle = rectangleLength * rectangleWidth;
 console.log(areaOfRectangle.toFixed(2));
 let cylinderVolume = radiusResult * rectangleLength;
 console.log(cylinderVolume.toFixed(2));
-
-
-

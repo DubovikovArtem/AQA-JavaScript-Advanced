@@ -25,42 +25,42 @@
  */
 
 const englishBooks = [
-    {
-        title: "To Kill a Mockingbird",
-        author: "Harper Lee",
-        year: 1960
-    },
-    {
-        title: "1984",
-        author: "George Orwell",
-        year: 1949
-    },
-    {
-        title: "The Great Gatsby",
-        author: "F. Scott Fitzgerald",
-        year: 1925
-    }
+  {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    year: 1960,
+  },
+  {
+    title: "1984",
+    author: "George Orwell",
+    year: 1949,
+  },
+  {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    year: 1925,
+  },
 ];
 
 for (index of englishBooks) {
-    for (key in index) {
-        if (key === "title") {
-            if (index[key] === "The Great Gatsby") {
-                continue;
-            }
-        }
-        if (key === "year") {
-            if (index[key] > 1940) {
-                console.log(key + " : " + index[key]);
-            }
-        }
-        if (key === "author") {
-            if (index[key] === "George Orwell") {
-                index[key] = "test name";
-            }
-        }
-        console.log(index[key]);
+  for (key in index) {
+    if (key === "title") {
+      if (index[key] === "The Great Gatsby") {
+        continue;
+      }
     }
+    if (key === "year") {
+      if (index[key] > 1940) {
+        console.log(key + " : " + index[key]);
+      }
+    }
+    if (key === "author") {
+      if (index[key] === "George Orwell") {
+        index[key] = "test name";
+      }
+    }
+    console.log(index[key]);
+  }
 }
 
-console.log(englishBooks)
+console.log(englishBooks);

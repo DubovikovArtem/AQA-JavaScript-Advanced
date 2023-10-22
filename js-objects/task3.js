@@ -12,13 +12,13 @@ genre - стрінга, має містити жанр.
  */
 
 let movie = {
-    title: "king kong",
-    releaseYear: 3005,
-    genre: "mobkey"
-}
-movie.actors = {mainRole : "Test Test"};
+  title: "king kong",
+  releaseYear: 3005,
+  genre: "mobkey",
+};
+movie.actors = { mainRole: "Test Test" };
 movie.director = "Adolf Hitler";
-console.log(movie)
+console.log(movie);
 delete movie.title;
 
 console.log(movie);

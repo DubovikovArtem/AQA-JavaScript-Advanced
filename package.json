@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/DubovikovArtem/AQA-JavaScript-Advanced/issues"
   },
-  "homepage": "https://github.com/DubovikovArtem/AQA-JavaScript-Advanced#readme"
+  "homepage": "https://github.com/DubovikovArtem/AQA-JavaScript-Advanced#readme",
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "prettier": "3.0.3"
+  }
 }

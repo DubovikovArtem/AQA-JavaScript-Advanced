@@ -10,43 +10,43 @@
 let numberOfMonths = "April";
 let msg;
 switch (numberOfMonths) {
-    case "January":
-        msg = "January";
-        break;
-    case "February":
-        msg = "February";
-        break;
-    case "March":
-        msg = "March";
-        break;
-    case "April":
-        msg = "April";
-        break;
-    case "May":
-        msg = "May";
-        break;
-    case "June":
-        msg = "June";
-        break;
-    case "July":
-        msg = "July";
-        break;
-    case "August":
-        msg = "August";
-        break;
-    case "September":
-        msg = "September";
-        break;
-    case "October":
-        msg = "October";
-        break;
-    case "November":
-        msg = "November";
-        break;
-    case "December":
-        msg = "December";
-        break;
-    default:
-        msg = "No one";
+  case "January":
+    msg = "January";
+    break;
+  case "February":
+    msg = "February";
+    break;
+  case "March":
+    msg = "March";
+    break;
+  case "April":
+    msg = "April";
+    break;
+  case "May":
+    msg = "May";
+    break;
+  case "June":
+    msg = "June";
+    break;
+  case "July":
+    msg = "July";
+    break;
+  case "August":
+    msg = "August";
+    break;
+  case "September":
+    msg = "September";
+    break;
+  case "October":
+    msg = "October";
+    break;
+  case "November":
+    msg = "November";
+    break;
+  case "December":
+    msg = "December";
+    break;
+  default:
+    msg = "No one";
 }
 console.log("Selected month: " + msg);

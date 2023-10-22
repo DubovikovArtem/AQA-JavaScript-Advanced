@@ -10,16 +10,18 @@ https://jsonplaceholder.typicode.com/
  */
 
 async function getTodos() {
-   const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
-   return response;
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  return response;
 }
 async function getComments() {
-   const response = await fetch("https://jsonplaceholder.typicode.com/comments/1");
-   return response;
+  const response = await fetch(
+    "https://jsonplaceholder.typicode.com/comments/1",
+  );
+  return response;
 }
 
 let resultAll = Promise.all([getTodos(), getComments()]);
-resultAll.then((showResult) => console.log("Promise.all",showResult));
+resultAll.then((showResult) => console.log("Promise.all", showResult));
 
 let resultRace = Promise.all([getTodos(), getComments()]);
 resultRace.then((showResult) => console.log("Promise.race", showResult));

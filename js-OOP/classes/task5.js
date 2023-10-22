@@ -45,41 +45,43 @@ registry.addPerson(person2);
  */
 
 class Person {
-    constructor(firstName, lastName, age) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-    }
+  constructor(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+  }
 }
 
 class PeopleRegistry extends Person {
-    constructor(firstName, lastName, age) {
-        super(firstName, lastName, age);
-        this.people = [];
-    }
-    addPerson(person) {
-        this.people.push(person);
-    }
+  constructor(firstName, lastName, age) {
+    super(firstName, lastName, age);
+    this.people = [];
+  }
+  addPerson(person) {
+    this.people.push(person);
+  }
 
-    removePerson(firstName, lastName) {
-        this.people = this.people.filter(
-            (person) =>
-                person.firstName !== firstName && person.lastName !== lastName
-        );
-    }
+  removePerson(firstName, lastName) {
+    this.people = this.people.filter(
+      (person) =>
+        person.firstName !== firstName && person.lastName !== lastName,
+    );
+  }
 
-    findPerson(firstName, lastName) {
-        return this.people.find(
-            (person) =>
-                person.firstName === firstName && person.lastName === lastName
-        );
-    }
+  findPerson(firstName, lastName) {
+    return this.people.find(
+      (person) =>
+        person.firstName === firstName && person.lastName === lastName,
+    );
+  }
 
-    listPeople() {
-        this.people.forEach((person) => {
-            console.log(`Name: ${person.firstName}, Last name: ${person.lastName}, age: ${person.age}`);
-        });
-    }
+  listPeople() {
+    this.people.forEach((person) => {
+      console.log(
+        `Name: ${person.firstName}, Last name: ${person.lastName}, age: ${person.age}`,
+      );
+    });
+  }
 }
 const registry = new PeopleRegistry();
 let person1 = new Person("Vasia", "Pupkin", "101");
@@ -93,8 +95,8 @@ registry.addPerson(person3);
 
 registry.listPeople();
 
-let filterOfPEople = registry.findPerson("Adam","Evin");
+let filterOfPEople = registry.findPerson("Adam", "Evin");
 console.log("find: ", filterOfPEople);
 
-registry.removePerson("Adam","Evin")
+registry.removePerson("Adam", "Evin");
 registry.listPeople();

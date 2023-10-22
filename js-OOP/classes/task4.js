@@ -28,55 +28,57 @@ Cтворіть екземпляр класу вашого автомобіля 
 */
 
 class CarClass {
-    #speed;
-    constructor(make, model, year) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.#speed = 0;
-    };
+  #speed;
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.#speed = 0;
+  }
 
-    getCarInfo() {
-        console.log(`Car: ${this.make} ${this.model} "${this.year}"`);
-    };
+  getCarInfo() {
+    console.log(`Car: ${this.make} ${this.model} "${this.year}"`);
+  }
 
-    accelerate(speed) {
-        let acc = this.#speed += speed;
-        return acc;
-    };
+  accelerate(speed) {
+    let acc = (this.#speed += speed);
+    return acc;
+  }
 
-    brake(speed) {
-        let bre = this.#speed -= speed;
-        return bre;
-    };
+  brake(speed) {
+    let bre = (this.#speed -= speed);
+    return bre;
+  }
 }
 
 class AudiClass extends CarClass {
-    #color;
-    constructor(make, model, year, color) {
-        super(make, model, year);
-        this.#color = color ?? "white";
-    }
-    getCarInfo() {
-        console.log(`Car: ${this.make} ${this.model} "${this.year}", Color: ${this.#color}`);
-    }
+  #color;
+  constructor(make, model, year, color) {
+    super(make, model, year);
+    this.#color = color ?? "white";
+  }
+  getCarInfo() {
+    console.log(
+      `Car: ${this.make} ${this.model} "${this.year}", Color: ${this.#color}`,
+    );
+  }
 
-    get color() {
-        return this.#color;
-    }
+  get color() {
+    return this.#color;
+  }
 
-    set color(myColor) {
-        this.#color = myColor;
-    }
+  set color(myColor) {
+    this.#color = myColor;
+  }
 
-    myCurrentColor(){
-        return this.color;
-    }
+  myCurrentColor() {
+    return this.color;
+  }
 }
 
 let audi = new AudiClass("Audi", "A3", "2000");
 audi.color = "Rad";
-console.log(audi.color)
+console.log(audi.color);
 audi.getCarInfo();
 let color = audi.myCurrentColor();
 console.log(color);
@@ -90,6 +92,3 @@ console.log(speedBrake);
 
 speedBrake = audi.brake(20);
 console.log(speedBrake);
-
-
-

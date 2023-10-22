@@ -10,6 +10,5 @@
 
 let numA = 12;
 let numB = 11;
-let result = (numA > numB)?numA: numB;
+let result = numA > numB ? numA : numB;
 console.log(result);
-

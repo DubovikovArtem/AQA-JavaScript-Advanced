@@ -7,16 +7,14 @@
  */
 
 async function delayAndLog(message, milliseconds) {
-    await new Promise(resolve => setTimeout(resolve, milliseconds));
-    console.log(message);
+  await new Promise((resolve) => setTimeout(resolve, milliseconds));
+  console.log(message);
 }
 
 async function execute() {
-    await delayAndLog("msg msg 1", 3000);
-    await delayAndLog("msg msg 2", 5000);
-    await delayAndLog("msg msg 3", 1000);
+  await delayAndLog("msg msg 1", 3000);
+  await delayAndLog("msg msg 2", 5000);
+  await delayAndLog("msg msg 3", 1000);
 }
 
 execute();
-
-

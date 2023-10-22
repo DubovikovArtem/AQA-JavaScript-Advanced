@@ -19,44 +19,44 @@ const tShirt = new Product("t-shirt", 20, 100);
 */
 
 class ProductClass {
-    constructor(name, price, quantity) {
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
-    }
+  constructor(name, price, quantity) {
+    this.name = name;
+    this.price = price;
+    this.quantity = quantity;
+  }
 
-    getTotalPrice() {
-        let totalPrice = this.price * this.quantity;
-        console.log(`Загальну вартість товару ${this.name} = ${totalPrice}`);
-    }
+  getTotalPrice() {
+    let totalPrice = this.price * this.quantity;
+    console.log(`Загальну вартість товару ${this.name} = ${totalPrice}`);
+  }
 
-    purchase(quantity) {
-        let msg;
-        if (this.quantity == 0) {
-            msg = "Товарів на складі 0";
-        } else {
-            if (this.quantity < quantity) {
-                msg = "Товарів на складі меньше";
-            } else {
-                msg = `Залишок товарів на складі: ${this.quantity - quantity}`
-            }
-        }
-        return msg;
+  purchase(quantity) {
+    let msg;
+    if (this.quantity == 0) {
+      msg = "Товарів на складі 0";
+    } else {
+      if (this.quantity < quantity) {
+        msg = "Товарів на складі меньше";
+      } else {
+        msg = `Залишок товарів на складі: ${this.quantity - quantity}`;
+      }
     }
+    return msg;
+  }
 }
 let res;
 
 let tShirt = new ProductClass("T-Shirt", 5, 0);
 tShirt.getTotalPrice();
 res = tShirt.purchase(11);
-console.log(res+"\n");
+console.log(res + "\n");
 
 let shoes = new ProductClass("Shoes", 10, 100);
 shoes.getTotalPrice();
 res = shoes.purchase(10);
-console.log(res+"\n");
+console.log(res + "\n");
 
-let suit = new ProductClass("Suit", 20, 20)
+let suit = new ProductClass("Suit", 20, 20);
 suit.getTotalPrice();
 res = suit.purchase(21);
-console.log(res+"\n");
+console.log(res + "\n");

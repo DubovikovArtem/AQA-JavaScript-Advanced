@@ -14,13 +14,13 @@ preferences - обєкт, який буде представляти що
  */
 
 let automationQA = {
-    programmerName: "Artem",
-    programmingLanguages: "JS",
-    age: 31,
-    languages: ["en", "uk", "ru"],
-    preferences: {
-        basicPrefences: "table"
-    }
-}
+  programmerName: "Artem",
+  programmingLanguages: "JS",
+  age: 31,
+  languages: ["en", "uk", "ru"],
+  preferences: {
+    basicPrefences: "table",
+  },
+};
 
-console.log(automationQA)
+console.log(automationQA);

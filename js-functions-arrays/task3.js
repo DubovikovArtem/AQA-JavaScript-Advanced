@@ -8,26 +8,26 @@ let nestedArray = [["apple", "banana", "dog"],["cherry", "cat", "elephant"],["re
  */
 
 let nestedArray = [
-    ["apple", "banana", "dog"],
-    ["cherry", "cat", "elephant"],
-    ["red", "green", "cat"]
+  ["apple", "banana", "dog"],
+  ["cherry", "cat", "elephant"],
+  ["red", "green", "cat"],
 ];
 
-//for 
+//for
 function testWorkWithArray(arr) {
-    let result;
-    let msg = "";
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr[i].length; j++) {
-            console.log(arr[i][j]);
-            result = arr[i][j];
-            if(result === "cat"){
-                msg = "is array contain cat? true";
-            }else{
-                msg = "is array contain cat? false"
-            }
-        }
+  let result;
+  let msg = "";
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      console.log(arr[i][j]);
+      result = arr[i][j];
+      if (result === "cat") {
+        msg = "is array contain cat? true";
+      } else {
+        msg = "is array contain cat? false";
+      }
     }
-    console.log(msg);
+  }
+  console.log(msg);
 }
 testWorkWithArray(nestedArray);

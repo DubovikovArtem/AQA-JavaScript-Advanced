@@ -7,10 +7,10 @@ window - булеве значення. // true/false.
  */
 
 let room = {
-    name: "badroom",
-    size: 20,
-    window: false
-}
+  name: "badroom",
+  size: 20,
+  window: false,
+};
 
 let nameField = room.name;
 let isWindow = room.window;
